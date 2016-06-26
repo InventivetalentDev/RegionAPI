@@ -2,7 +2,6 @@ package org.inventivetalent.regionapi;
 
 import com.sk89q.worldguard.protection.flags.DefaultFlag;
 import com.sk89q.worldguard.protection.flags.Flag;
-import org.bukkit.Bukkit;
 import org.inventivetalent.reflection.resolver.FieldResolver;
 
 import java.lang.reflect.Field;
@@ -23,7 +22,6 @@ class FlagInjector {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		Bukkit.getMessenger().registerOutgoingPluginChannel();
 	}
 
 	static {
