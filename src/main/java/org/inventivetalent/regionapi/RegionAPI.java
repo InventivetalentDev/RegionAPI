@@ -166,6 +166,19 @@ public class RegionAPI implements API {
 	}
 
 	/**
+	 * Get the <code>__global__</code> region of a world
+	 *
+	 * @param world world to get the region for
+	 * @return the __global__ region
+	 */
+	@Nullable
+	public static ProtectedRegion getGlobalRegion(World world) {
+		RegionManager manager = getRegionManager(world);
+		if (manager == null) { return null; }
+		return manager.getRegion("__global__");
+	}
+
+	/**
 	 * @return the {@link WorldGuardPlugin}
 	 */
 	public static WorldGuardPlugin getWorldGuard() {
