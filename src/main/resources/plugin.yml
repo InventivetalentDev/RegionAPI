@@ -1,0 +1,6 @@
+name: RegionAPI
+main: org.inventivetalent.regionapi.RegionPlugin
+author: inventivetalent
+version: ${project.version}
+
+loadbefore: [WorldGuard]
