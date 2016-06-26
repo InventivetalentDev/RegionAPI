@@ -7,7 +7,7 @@ public class RegionPlugin extends JavaPlugin {
 
 	@Override
 	public void onLoad() {
-		APIManager.registerAPI(new RegionAPI());
+		APIManager.registerAPI(new RegionAPI(), this);
 	}
 
 	@Override
